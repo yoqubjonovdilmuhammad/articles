@@ -1,0 +1,124 @@
+/* roboto-condensed-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/roboto-condensed-v25-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* roboto-condensed-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/roboto-condensed-v25-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+} /* bebas-neue-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/bebas-neue-v10-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-size: 1.6rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: "Bebas Neue", sans-serif;
+}
+.container {
+  width: 100%;
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+.wrapper {
+  display: flex;
+  flex-grow: 1;
+}
+.hero {
+  width: 50%;
+  height: 100%;
+  background-image: url(../img/hero.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero__wrapper {
+  width: 100%;
+  max-width: 285px;
+}
+.hero__title {
+  color: #fff;
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 1.2;
+  letter-spacing: 2px;
+  margin-bottom: 2.4rem;
+}
+.hero__btn {
+  border: 0;
+  background-color: #1e90ff;
+  padding: 1.2rem 2.4rem;
+  font-family: inherit;
+  transition: 0.3s;
+}
+.hero__btn:hover {
+  background-color: rgba(30, 144, 255, 0.8);
+}
+
+.hero__btn__inner-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+.hero__btn__image::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/yulduz.png);
+  background-repeat: no-repeat;
+  background-position: cente;
+}
+.hero__btn__text {
+  letter-spacing: 2px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.main {
+  width: 50%;
+  height: 100%;
+  padding: 5.4rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 0.8;
+  letter-spacing: 1px;
+}
